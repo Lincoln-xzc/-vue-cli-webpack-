@@ -96,6 +96,8 @@ plugins:[
   npm i -D webpack-parallel-uglify-plugin
   然后在webpack.prod.conf.js中加入如下代码:
 ```
+  const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');
+  
   //去除uglifyjsPlugin
   new ParallelUglifyPlugin({
     cacheDir: '.cache/',
