@@ -13,8 +13,7 @@
   options: vueLoaderConfig,
   include: [resolve('src'), resolve('node_modules')]
 ```
-> 2.将一些很少数改动的包拆分出来提前打包，这里我们引入dllPlugin插件。首先我们需要安装DllPlugin,DllReferencePlugin（npm i DllPlugin DllReferencePlugin）,
-    然后在build目录下新建一个webpack.dll.conf.js文件，加入以下代码：
+> 2.将一些很少数改动的包拆分出来提前打包，这里我们引入dllPlugin插件。然后在build目录下新建一个webpack.dll.conf.js文件，加入以下代码：
 ```
 const path = require('path');
 const webpack = require('webpack');
